@@ -25,7 +25,8 @@ func saveTextToFile(filename string, input string) {
 func main() {
 	// ファイル名指定がなければ終了
 	if len(os.Args) != 2 {
-			return
+		fmt.Println("goedit /path/to/textfile")
+		return
 	}
 
 	var filename string = os.Args[1]
